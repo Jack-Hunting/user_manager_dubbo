@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql:///cla_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+dubbo:
+  application:
+    name: cla_service
+  registry:
+    address: zookeeper://152.136.157.169:2181
+  protocol:
+    name: dubbo
+    port: -1

@@ -1,0 +1,11 @@
+spring:
+  thymeleaf:
+    cache: false
+dubbo:
+  application:
+    name: user_web
+  registry:
+    address: zookeeper://152.136.157.169:2181
+#    与学生服务本身调用了班级服务一样,也是一个消费者
+  consumer:
+    check: false
